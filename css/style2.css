@@ -1,0 +1,48 @@
+body {
+	background-color: #e8e8e8;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.container {
+    content: "";
+    clear: both;
+    display: block;   
+}
+
+.img {
+    width: 100%;
+}
+
+.thumbnail {
+    height: auto;
+	width: 10%;
+    margin: 10px;
+    border:none;
+    cursor: pointer;
+}
+
+.thumbnail.selected {
+    border: 5px solid rgb(63, 63, 63);
+}
+
+#large-image-container {
+    width: 75%;
+    margin: 10px;
+}
+
+#large-image {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#caption {
+    margin: 10px;
+    font-style: Normal;
+    font-weight: bold;
+    font-size: 15px;
+}
