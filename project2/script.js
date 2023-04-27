@@ -150,10 +150,3 @@ function validateEmail() {
     }
     return true;
   }
-
-
-  const firstName = document.getElementById('firstName');
-
-firstName.addEventListener('invalid', (event) => {
-  event.preventDefault();
-});
