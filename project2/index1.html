@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/e4eb8bda70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="my-form">
+        <i class="fa-solid fa-comment"></i>
+
+      <div class="input-group">
+        <label>First Name</label>
+        <input type="text" placeholder="Enter your First Name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter your Last Name" id="contact-lastname" onkeyup="validateLastname()">
+        <span id="lastname-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Address</label>
+        <input type="text" placeholder="Enter your Address" id="contact-address" onkeyup="validateAddress()">
+        <span id="address-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>City</label>
+        <input type="text" placeholder="Enter your City" id="contact-city" onkeyup="validateCity()">
+        <span id="city-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>State</label>
+        <select name="state" id="state">
+        <option value="---">Select</option>
+        <option value="Alabama">Alabama</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California">California</option>
+        <option value="Colorado">Colorado</option>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Delaware">Delaware</option>
+        <option value="District of Columbia">District of Columbia</option>
+        <option value="Florida">Florida</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Guam">Guam</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Illinois">Illinois</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Kansas">Kansas</option>
+        <option value="Kentucky">Kentucky</option>
+        <option value="Louisiana">Louisiana</option>
+        <option value="Maine">Maine</option>
+        <option value="Maryland">Maryland</option>
+        <option value="Massachusetts">Massachusetts</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Minnesota">Minnesota</option>
+        <option value="Mississippi">Mississippi</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Montana">Montana</option>
+        <option value="Nebraska">Nebraska</option>
+        <option value="Nevada">Nevada</option>
+        <option value="New Hampshire">New Hampshire</option>
+        <option value="New Jersey">New Jersey</option>
+        <option value="New Mexico">New Mexico</option>
+        <option value="New York">New York</option>
+        <option value="North Carolina">North Carolina</option>
+        <option value="North Dakota">North Dakota</option>
+        <option value="Northern Marianas Islands">Northern Marianas Islands</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Oklahoma">Oklahoma</option>
+        <option value="Oregon">Oregon</option>
+        <option value="Pennsylvania">Pennsylvania</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="Rhode Island">Rhode Island</option>
+        <option value="South Carolina">South Carolina</option>
+        <option value="South Dakota">South Dakota</option>
+        <option value="Tennessee">Tennessee</option>
+        <option value="Texas">Texas</option>
+        <option value="Utah">Utah</option>
+        <option value="Vermont">Vermont</option>
+        <option value="Virginia">Virginia</option>
+        <option value="Virgin Islands">Virgin Islands</option>
+        <option value="Washington">Washington</option>
+        <option value="West Virginia">West Virginia</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Wyoming">Wyoming</option>
+        </select>
+</div>
+
+<div class="input-group">
+    <label>Zipcode</label>
+    <input type="text" placeholder="Zipcode" id="contact-zip" onkeyup="validateZip()">
+    <span id="zip-error"></span>
+  </div>
+
+      <div class="input-group">
+        <label>Phone</label>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div> 
+
+      <div class="input-group">
+        <label>Confirm Email</label>
+        <input type="email" placeholder="Confirm Email" id="contact-confirmemail" onkeyup="validateConfirmemail()">
+        <span id="confirmemail-error"></span>
+      </div>
+
+      <div class="meal">
+        <label for="meal">Meal Preference*</label><br>
+        <input type="radio" name="meal" value="vegan">Vegan <br>
+        <input type="radio" name="meal" value="vegetarian">Vegetarian <br>
+        <input type="radio" name="meal" value="non-vegetarian">Non-Vegetarian <br>
+      </div>
+
+      <div class="contact-method">
+        <label for="contact-method" required>Contact Method*</label><br>
+        <input type="checkbox" id="phone1" name="phone1" value="Phone1">
+        <label for="phone">Phone</label>
+        <input type="checkbox" id="email1" name="email1" value="Email1">
+        <label for="email1">Email</label><br>
+        <input type="checkbox" id="mail" name="mail" value="Mail">
+        <label for="mail">Mail</label>
+        <input type="checkbox" id="linkedin" name="linkedin" value="LinkedIn">
+        <label for="linkedin">LinkedIn</label><br><br>
+    </div>
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message"></textarea>
+      </div>
+
+<div class="buttons">
+    <button>Submit</button>
+    <span id="submit-error"></span>
+    <button type="reset">Reset</button>
+</div>
+  </form>  
+  </div>
+   <script src="/script.js"></script>
+</body>
+</html>
