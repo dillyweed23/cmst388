@@ -151,23 +151,9 @@ function validateEmail() {
     return true;
   }
 
-// showing what errors before submitting
-function validateForm(){
-    if(!validateName() || !validateLastname() || !validateAddress() || !validateCity() || !validateZip() || !validateState() || !validatePhone() || !validateEmail()) {
-        submitError.innerHTML = 'Please fix errors to submit';
-        return false;
-    }
-    return true;
-}
 
-// Preventing the form to submit unless errors are completed
-var form = document.getElementById('my-form');
-form.addEventListener('submit', function(event) {
-    if (!validateForm()) {
-        event.preventDefault();
-        return true;
-    }
-    // submit the form
+  const firstName = document.getElementById('firstName');
+
+firstName.addEventListener('invalid', (event) => {
+  event.preventDefault();
 });
-
-

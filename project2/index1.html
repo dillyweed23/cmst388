@@ -12,25 +12,25 @@
 
       <div class="input-group">
         <label>First Name</label>
-        <input type="text" placeholder="Enter your First Name" id="contact-name" onkeyup="validateName()">
+        <input type="text" placeholder="Enter your First Name" id="contact-name" onkeyup="validateName()" required>
         <span id="name-error"></span>
       </div>
 
       <div class="input-group">
         <label>Last Name</label>
-        <input type="text" placeholder="Enter your Last Name" id="contact-lastname" onkeyup="validateLastname()">
+        <input type="text" placeholder="Enter your Last Name" id="contact-lastname" onkeyup="validateLastname()" required>
         <span id="lastname-error"></span>
       </div>
 
       <div class="input-group">
         <label>Address</label>
-        <input type="text" placeholder="Enter your Address" id="contact-address" onkeyup="validateAddress()">
+        <input type="text" placeholder="Enter your Address" id="contact-address" onkeyup="validateAddress()" required>
         <span id="address-error"></span>
       </div>
 
       <div class="input-group">
         <label>City</label>
-        <input type="text" placeholder="Enter your City" id="contact-city" onkeyup="validateCity()">
+        <input type="text" placeholder="Enter your City" id="contact-city" onkeyup="validateCity()" required>
         <span id="city-error"></span>
       </div>
 
@@ -98,33 +98,33 @@
 
 <div class="input-group">
     <label>Zipcode</label>
-    <input type="text" placeholder="Zipcode" id="contact-zip" onkeyup="validateZip()">
+    <input type="text" placeholder="Zipcode" id="contact-zip" onkeyup="validateZip()" required>
     <span id="zip-error"></span>
   </div>
 
       <div class="input-group">
         <label>Phone</label>
-        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()" required>
         <span id="phone-error"></span>
       </div>
 
       <div class="input-group">
         <label>Email</label>
-        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()" required>
         <span id="email-error"></span>
       </div> 
 
       <div class="input-group">
         <label>Confirm Email</label>
-        <input type="email" placeholder="Confirm Email" id="contact-confirmemail" onkeyup="validateConfirmemail()">
+        <input type="email" placeholder="Confirm Email" id="contact-confirmemail" onkeyup="validateConfirmemail()" required>
         <span id="confirmemail-error"></span>
       </div>
 
       <div class="meal">
         <label for="meal">Meal Preference*</label><br>
-        <input type="radio" name="meal" value="vegan">Vegan <br>
-        <input type="radio" name="meal" value="vegetarian">Vegetarian <br>
-        <input type="radio" name="meal" value="non-vegetarian">Non-Vegetarian <br>
+        <input type="radio" name="meal" value="vegan" required>Vegan <br>
+        <input type="radio" name="meal" value="vegetarian" required>Vegetarian <br>
+        <input type="radio" name="meal" value="non-vegetarian" required>Non-Vegetarian <br>
       </div>
 
       <div class="contact-method">
