@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="style1.css">
+		<title>Event Registration</title>
+	</head>
+	<body>
+	<header>
+		<img src="logo1.png" width="315" height="62"/>
+	</header>
+	<article>
+		<section>
+			<p>We are delighted to welcome back our alumni for an evening of networking and fun. Event tickets are only $5.00 per person, not including a ticket processing fee of $0.50, and include light appetizers. To register for the event, fill out the form below. All fields with <span class="required">*</span> are required</p>
+		</section>
+	
+		<section>
+			<p>Act fast! This transaction must be completed in <span id="transactionTimer">10:00</span> minutes</p>
+		</section>
+	
+		<section>
+			<form action="/submit-form" method="POST">
+				<fieldset>
+					<legend>Digital Media and Web Technology (DMWT) Alumni Event Registration</legend>
+				
+					<label for="lastnum">How many tickets would you like to purchase? You can purchase up to 3 tickets. <span class="required">*</span></label>
+					<input type="number" id="lastnum">
+					<span class="number-error"></span>
+					
+					<label for="totalCost">Your total cost will be: <span id="totalCost">0.00</span></label>
+					
+
+					<div>
+						<label for="name">Name <span class="required">*</span></label>
+						<input type="text" id="name" class="validate">
+						<span class="name-error"></span>
+				
+						<label for="address">E-Mail Address <span class="required">*</span></label>
+						<input type="text" id="email" class="validate">
+						<span class="email-error"></span>
+						
+						<div class="actionButtons">
+							<button type="submit" id="purchaseTickets">Purchase Tickets</button>
+							<button type="reset" onclick="resetTimer()">Reset</button>	
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			
+		</section>
+	</article>
+<script type="module" src="https://s.brightspace.com/lib/bsi/20.23.4-262/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							'outputScale': 1.3,
+							'renderLatex': true
+						});
+					}
+				});</script>
+				<script type="module" src="https://s.brightspace.com/lib/bsi/20.23.4-262/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					}); });</script>
+				<script src="event_registration1.js"></script>
+				</body>
+				</html>
